@@ -1,0 +1,17 @@
+﻿<Window x:Class="RepoNameCleaner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RepoNameCleaner"
+        mc:Ignorable="d"
+        Title="Repo Name Cleaner - A Bladepianist Creation" Height="200" Width="450">
+    <Grid HorizontalAlignment="Center" Width="450">
+        <Label x:Name="Lbl_File" Content="Chemin vers Liste d'Expressions à Supprimer" Margin="10,8,10,0" VerticalAlignment="Top" RenderTransformOrigin="-0.836,-0.749"/>
+        <TextBox x:Name="Tb_File" Height="23" Margin="10,35,10,0" TextWrapping="Wrap" Text="Click to write Path to file. Double-click to select." VerticalAlignment="Top" MouseDoubleClick="Tb_File_MouseDoubleClick" GotFocus="Tb_File_GotFocus" LostFocus="Tb_File_LostFocus"/>
+
+        <Label x:Name="Lbl_Directory" Content="Chemin du Dossier à Nettoyer" Margin="10,58,10,0" VerticalAlignment="Top" RenderTransformOrigin="-0.836,-0.749"/>
+        <TextBox x:Name="Tb_Directory" Height="23" Margin="10,85,10,0" TextWrapping="Wrap" Text="Click to write Path to file. Double-click to select." VerticalAlignment="Top" MouseDoubleClick="Tb_Directory_MouseDoubleClick" GotFocus="Tb_File_GotFocus" LostFocus="Tb_File_LostFocus"/>
+        <Button x:Name="Btn_RepoNameCleaner" Height="30" Content="Clean !" Margin="132,113,132,6" Click="Btn_RepoNameCleaner_Click"/>
+    </Grid>
+</Window>
